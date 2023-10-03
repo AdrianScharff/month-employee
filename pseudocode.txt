@@ -1,0 +1,73 @@
+Preguntar cuantos productos de Aqua vendio Juana en un input
+Boton - Al dar click se ejecuta una funcion getProductsSold que:
+    Si el valor es numerico, 
+        Imprime en consola la cantidad de productos Aqua que vendio Juana
+        Si la alert no incluye d-none
+            Anadirla a la alert
+    Si no es numerico 
+        remueve d-none de la alert
+
+Preguntar cuantos productos de Emocion vendio Juana
+
+Preguntar cuantos productos de Alegria vendio Juana
+
+Preguntar cuantos productos de Frescura vendió Juana
+
+Checkbox - Debe estar marcado para ejecutar la siguiente funcion
+Boton submit - Al dar click
+    Si el checkbox esta checked && todos son numeros
+        Se ejecturara la funcion getRaised que:
+            Declara variable sumAqua que multiplica 200 x el value del input aquaJuana
+            Declara variable sumEmocion que multiplica 180 x el value del input emocionJuana
+            Declara variable sumAlegria que multiplica 160 x el value del input alegriaJuana
+            Declara variable sumFrescura que multiplica 150 x el value del input frescuraJuana
+            Declara array vacio arraySales
+            Empuja asi arraySales.push(sumAqua, sumEmocion, sumAlegria, sumFrescura)
+            Declara variable totalSum con valor = 0
+            Crea loop que suma todas los elementos del array arraySales y asigna el resultado a la variable totalSum
+            console.log(totalSum)
+            retorna totalSum
+        Declara totalRaisedJuana = getRaised(Juana)
+        else
+            Si no todos son numeros
+                quitar clase d-none a la alerta de los numeros
+            Si no está checked
+                quitar clase d-none a la alerta del checkbox
+        
+
+    
+
+
+
+Preguntar cuantos productos de Aqua vendio Pedro
+Checar si es numero y si no, mostrar un error en alert y volver a preguntar
+Boton que muestra en consola la cantidad de productos Aqua que vendio Pedro al dar click
+Multiplicar el monto por los productos Aqua en una variable y pushearla a el array raisedPedro
+
+Preguntar cuantos productos de Emocion vendio Pedro
+Checar si es numero y si no, mostrar un error en alert y volver a preguntar
+Boton que muestra en consola la cantidad de productos Emocion que vendio Pedro al dar click
+Multiplicar el monto por los productos Emocion en una variable y pushearla a el array raisedPedro
+
+Preguntar cuantos productos de Alegria vendio Pedro
+Checar si es numero y si no, mostrar un error en alert y volver a preguntar
+Boton que muestra en consola la cantidad de productos Alegria que vendio Pedro al dar click
+Multiplicar el monto por los productos Alegria en una variable y pushearla a el array raisedPedro
+
+Preguntar cuantos productos de Frescura vendió Pedro
+Checar si es numero y si no, mostrar un error en alert y volver a preguntar
+Boton que muestra en consola la cantidad de productos Frescura que vendio Pedro al dar click
+Multiplicar el monto por los productos Frescura en una variable y pushearla a el array raisedPedro
+
+A traves de un loop sumar las cantidades dentro del array raisedPedro y asignarlas a la variable totalRaisedPedro
+Crear un boton que muestre la suma de las cantidades en raisedPedro
+
+
+Boton para conocer al empleado del mes al dar click
+    Se ejecuta una funcion anonima que
+        Si totalRaisedJuana > totalRaisedPedro
+            console.log('La empleada del mes es Juana!')
+        Si totalRaisedJuana < totalRaisedPedro
+            console.log('El empleado del mes es Pedro!)
+        Si no
+            console.log('Juana y Pedro estan empatados!')
